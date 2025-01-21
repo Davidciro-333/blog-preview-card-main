@@ -19,11 +19,11 @@
 
 .cardMobile {
     background-color: var(--White);
-    width: 279px;
-    height: 453px;
+    width: 17.5rem;
+    height: auto;
     border-radius: 20px;
-    padding: 24px;
-    box-shadow: 10px 10px black;
+    padding: 1.5rem;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.75);
 }
 
 .blogImage {
@@ -75,7 +75,7 @@
 .description {
     font-size: 14px;
     font-weight: normal;
-    margin: 0 0 0 0;
+    margin: 0;
 }
 
 .author {
@@ -97,9 +97,9 @@
     }
 
     .cardMobile {
-        max-width: 384px;
-        width: 20%;         /* Hace que la tarjeta sea flexible */
-        height: auto;       /* Mantiene proporciones adecuadas */
+        max-width: 90%;
+        width: 384px; /* Límite para pantallas grandes */
+        height: auto;      
     }
 }
 
