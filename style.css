@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray500: hsl(0, 0%, 42%);
+    --Gray950: hsl(0, 0%, 7%);
+}
+
+.main {
+    height: 100vh;
+    background-color: var(--Yellow);
+    font-family: "Figtree";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardMobile {
+    background-color: var(--White);
+    width: 279px;
+    height: 453px;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 10px 10px black;
+}
+
+.blogImage {
+    border-radius: 10px;
+    min-height: auto;
+}
+
+.blogImage img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content {
+    margin: 24px 0 44px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.category {
+    width: 73px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Yellow);
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.content h3 {
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.content h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 12px 0;
+}
+
+.published {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0 0 12px 0;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 0 0;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.author img {
+    margin-right: 12px;
+}
+
+@media(min-width:944px) {
+    .main {
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto; 
+    }
+
+    .cardMobile {
+        max-width: 384px;
+        width: 20%;         /* Hace que la tarjeta sea flexible */
+        height: auto;       /* Mantiene proporciones adecuadas */
+    }
+}
+
